@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">app_rest</string>
+    <string name="pass">Password</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="add">Add Image</string>
+    <string name="delete">Delete Image</string>
+    <string name="upload">Upload Image</string>
+    <string name="image_delete">Image Name</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
