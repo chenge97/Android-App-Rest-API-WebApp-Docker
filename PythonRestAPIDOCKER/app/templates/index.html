@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rest Api Docker</title>
+	<link rel="stylesheet" href="{{url_for('static',filename='css/materialize.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/materialize.min.css')}}">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript" src="{{ url_for('static', filename='js/materialize.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/materialize.min.js') }}"></script>
+
+	<style type="text/css">
+		img{
+			width: 20%;
+			height: 20%;
+		}
+	</style>
+</head>
+<body style="background-color: #D2E2EA">
+	<nav style="background-color: #B3BEC3">
+	    <div class="nav-wrapper" style="padding-right: 30px;">
+	      <ul id="nav-mobile" class="right hide-on-med-and-down">
+	        <li><a href="{{url_for('index')}}" style="color: black">Log In</a></li>
+	        <li><a href="{{url_for('register')}}" style="color: black">Register</a></li>
+	      </ul>
+	    </div>
+  </nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m12 l12 center"><img src="static/images/docker.png"></div>
+			<div class="row"></div>
+			<div class="row"></div>
+
+			<div class="col s3 hide-on-med-and-down"></div>
+			<div class="col s12 m12 l6 center" style="background-color: white; border-radius: 25px;">
+				<form action="{{url_for('check_user_exist')}}" method="post">
+					<div class="row"></div>
+					<div class="row"></div>
+					<div class="input-field col s12 m12 l12 center">
+			          <input id="email" name="email" type="email" class="validate">
+			          <label for="email">Email</label>
+			        </div>
+
+			        <div class="row"></div>
+
+			        <div class="input-field col s12 m12 l12 center">
+			          <input id="password" name="password" type="password" class="validate">
+			          <label for="password">Password</label>
+			        </div>
+
+			        <div class="row"></div>
+			        <div class="row"></div>
+			        <div class="row"></div>
+			        <div class="col s12 m12 l12 center">
+				        <button class="btn red" type="submit" name="action" style="width: 100%;">Log In
+						<i class="material-icons right">send</i>
+						</button>
+					</div>
+					
+					
+					<div class="row"></div>
+					<div class="row"></div>
+					<div class="row"></div>
+					<div class="row"></div>
+					<div class="row"></div>
+					
+				</form>
+			</div>
+			<div class="col s3 hide-on-med-and-down"></div>
+
+		</div>
+	</div>
+</body>
+</html>

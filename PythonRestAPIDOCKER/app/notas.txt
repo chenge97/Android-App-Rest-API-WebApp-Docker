@@ -1,0 +1,2 @@
+docker-compose build --no-cache
+Ayuda a volver a correr el Dockerfile si se le hacen cambios
